@@ -10,7 +10,7 @@
     <title>My Portfolio | Chandana CA</title>
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="My Portfolio | Chandana CA">
+    <meta property="og:title" content="My Portfolio - Chandana CA">
     <meta property="og:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance and collaborations.">
     <meta property="og:image" content="images/profile.jpg">
     <meta property="og:url" content="[Your Portfolio URL]">
@@ -18,68 +18,117 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="My Portfolio | Chandana CA">
+    <meta name="twitter:title" content="My Portfolio - Chandana CA">
     <meta name="twitter:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance and collaborations.">
     <meta name="twitter:image" content="images/profile.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <header>
-        <h1>Hi 👋 I'm Chandana</h1>
-        <p>I'm a passionate web developer from bangalore.</p>
-        <a href="#contact" class="btn">Hire Me</a>
+    <!-- HEADER + NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">CA</div>
+            <ul class="nav-links">
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <!-- FOR DARK MODE TOGGLE -->
+            <button class="theme-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">⭐</button>
+            <!--Mobile Menu Toggle-->
+            <button class="menu-toggle" title="Toggle Menu" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+        </nav>
     </header>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <figure>
-            <img src="profile.jpg" alt="Chandana's Profile Picture" width="200" height="150">
-            <figcaption>Chandana CA</figcaption>
-        </figure>
-        <p>I love building things on the web, currently learning HTML,CSS,JavaScript, and React.</p>
-    </section>
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <h1>Hi, <span class="highlight">I'm Chandana</span></h1>
+            <p class="tagline">I build beautiful, fast, and user-friendly websites.</p>
+            <div class="hero-buttons">
+                <a href="" class="btn btn-primary">View My Work</a>
+                <a href="" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ol>
-    </section>
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <figure>
+                    <img src="profile.jpg" alt="profile pic" width="200" height="150">
+                    <figcaption>Chandana CA</figcaption>
+                </figure>
+                <div class="about-text">
+                    <p>I am a passionate web developer.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>A simple web application built with HTML, CSS, and JavaScript.</p>
-            <a href="project1.html" class="btn">View Project</a>
-            <!-- Embed YouTube video (iframe) -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tqjJrXd27m4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
+        <!-- SKILLS SECTION -->
+        <section class="skill-section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+            </div>
+        </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:chandanaca1801@gmail.com">chandanaca1801@gmail.com</a></p>
-        <p>Linkedin: <a href="https://www.linkedin.com/in/chandana-ca-b37a33391/" target="_blank">linkedin.com/in/chandana-ca</a></p>
-        <p>GitHub: <a href="https://github.com/chandanaca07" target="_blank">github.com/chandanaca</a></p>
-    </section>       
+        <!-- PROJECTS SECTION -->
+        <section class="project-section" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card" data-category="web">
+                    <img src="https://play-lh.googleusercontent.com/Re6Wdbe1MxCFvLbSmtr-J202tk969QcSFkdO3hGiQMmda1bUYpZFiAo5qLBirs3eLpVPWMKa6uBNL0mxq-gNiA" alt="Weather app ss">
+                    <div class="project-card-body">
+                        <h3>Weather App</h3>
+                        <p>Real-time weather dashboard using API</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <a href="" class="btn">Live Demo</a>
+                    <a href="" class="btn">GitHub</a>
+                </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <p> &copy; <span class="footer-year"></span>Chandana. Build with HTML, CSS, and JavaScript</p>
+            <nav arial label="Social links">
+                <a href="https://github.com/chandanaca07" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/chandana-ca-b37a33391/" target="_blank">LinkedIn</a>
+            </nav>
+        </footer>
+    </main>
 </body>
 </html>
