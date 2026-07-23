@@ -8,9 +8,9 @@
 
 /* CSS Custom Properties (variables) - DRY Principle */
 :root {
-    --primary: #1B4F72;
-    --accent: #F18F01;
-    --text: #2C3E50;
+    --primary: #132a36;
+    --accent: #987747;
+    --text: #2b3641;
     --light: #F4F6F8;
     --white: #FFFFFF;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
