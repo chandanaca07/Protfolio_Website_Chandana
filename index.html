@@ -32,10 +32,10 @@
         <nav class="navbar">
             <div class="logo">CA</div>
             <ul class="nav-links">
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <!-- FOR DARK MODE TOGGLE -->
             <button class="theme-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">⭐</button>
@@ -84,6 +84,12 @@
         <!-- PROJECTS SECTION -->
         <section class="project-section" id="projects">
             <h2>My Projects</h2>
+            <div class="projects-filler">
+                <!-- The data-filler attribute is what our JS will read -->
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn active" data-filter="web">Web</button>
+                <button class="filter-btn active" data-filter="design">Design</button>
+            </div>
             <div class="projects-grid">
                 <article class="project-card" data-category="web">
                     <img src="https://play-lh.googleusercontent.com/Re6Wdbe1MxCFvLbSmtr-J202tk969QcSFkdO3hGiQMmda1bUYpZFiAo5qLBirs3eLpVPWMKa6uBNL0mxq-gNiA" alt="Weather app ss">
